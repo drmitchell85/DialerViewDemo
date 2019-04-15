@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">@color/solid_dark_grey</color>
+    <color name="colorPrimaryDark">@color/translucent_dark_grey</color>
+    <color name="colorAccent">@color/solid_blue</color>
+
+    <!-- shades of gray -->
+    <color name="solid_dark_grey">#333333</color>
+    <color name="translucent_dark_grey">#44333333</color>
+    <color name="solid_light_grey">#b2b2b2</color>
+    <color name="solid_material_grey">#ff212121</color>
+    <color name="solid_selected_grey">#1A1A1A</color>
+
+    <!-- Blues -->
+    <color name="solid_blue">#319ed9</color>
+    <color name="translucent_blue">#44319ED9</color>
+    <color name="solid_blue_selected">#217DAF</color>
+
+    <!-- Red color -->
+    <color name="solid_red">#FF4753</color>
+    <color name="solid_red_selected">#EE5055</color>
+
+    <!-- No color -->
+    <color name="transparent">#00000000</color>
+
+    <!-- title text color -->
+    <color name="title_text_color">@color/solid_light_grey</color>
+
+
+    <!-- white color -->
+    <color name="White">#FFFFFF</color>
+
+    <!-- black color -->
+    <color name="Black">#000000</color>
+
+    <color name="green">#009900</color>
+
+    <color name="dialpad_primary_text_color">#0288d1</color>
+    <color name="dialpad_secondary_text_color">#737373</color>
+    <color name="dialpad_digits_text_color">@color/solid_light_grey</color>
+
+    <color name="video_panel_overlay">#88333333</color>
+
+    <color name="golden_rod">#DAA520</color>
+
+    <!-- Comcast Material Design Colors -->
+    <!-- Dark Theme Background -->
+    <color name="black">#000000</color>
+    <color name="coolGrey14">#191919</color>
+    <color name="coolGrey13">#2A2C2D</color>
+
+    <!-- Other colors -->
+    <color name="xfinityBlue">#2B9CD8</color>
+    <color name="charcoalGrey">#5A5A5C</color>
+    <color name="coolGrey12">#44484C</color>
+    <color name="coolGrey11">#646A70</color>
+    <color name="coolGrey10">#868F96</color>
+    <color name="coolGrey9">#9BA4AA</color>
+    <color name="coolGrey8">#B1B9BF</color>
+    <color name="coolGrey7">#C7CDD2</color>
+    <color name="coolGrey6">#DDE2E6</color>
+    <color name="coolGrey5">#E6EAED</color>
+    <color name="coolGrey4">#EBEEF0</color>
+
+    <!-- Light Theme Background -->
+    <color name="coolGrey3">#EEF1F3</color>
+    <color name="coolGrey2">#F2F4F5</color>
+    <color name="coolGrey1">#FBFCFC</color>
+    <color name="white">#FFFFFF</color>
+
+</resources>
