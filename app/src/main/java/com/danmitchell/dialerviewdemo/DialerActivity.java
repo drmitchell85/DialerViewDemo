@@ -51,7 +51,8 @@ public class DialerActivity extends AppCompatActivity {
                             break;
 
                         case R.id.nav_video:
-                            selectedFragment = new VideoFragment();
+                            // selectedFragment = new VideoFragment();
+                            selectedFragment = new DialerTestFragment();
                             break;
                     }
 
