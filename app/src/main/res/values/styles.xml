@@ -11,28 +11,28 @@
     <style name="Buttons">
         <item name="android:layout_height">50dp</item>
         <item name="android:layout_width">50dp</item>
-        <item name="android:layout_margin">10dp</item>
+        <item name="android:layout_margin">5dp</item>
         <item name="android:background">@drawable/button_dialer</item>
     </style>
 
     <style name="ButtonsTransparent">
         <item name="android:layout_height">70dp</item>
         <item name="android:layout_width">70dp</item>
-        <item name="android:layout_margin">10dp</item>
+        <item name="android:layout_margin">5dp</item>
         <item name="android:background">@drawable/button_transparent</item>
     </style>
 
     <style name="ButtonEndCall">
         <item name="android:layout_height">70dp</item>
         <item name="android:layout_width">70dp</item>
-        <item name="android:layout_margin">10dp</item>
+        <item name="android:layout_margin">5dp</item>
         <item name="android:background">@drawable/button_endcall</item>
     </style>
 
     <style name="ButtonAcceptCall">
         <item name="android:layout_height">70dp</item>
         <item name="android:layout_width">70dp</item>
-        <item name="android:layout_margin">10dp</item>
+        <item name="android:layout_margin">5dp</item>
         <item name="android:background">@drawable/button_acceptcall</item>
     </style>
 

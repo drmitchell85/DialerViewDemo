@@ -11,20 +11,23 @@
         android:layout_height="wrap_content"
         android:layout_above="@+id/relativeLayout2"
         android:layout_marginLeft="50dp"
-        android:layout_marginRight="50dp">
+        android:layout_marginRight="50dp"
+        android:orientation="horizontal">
 
         <EditText
             android:id="@+id/edit_text_input"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_margin="10dp"
             android:layout_weight="1"
             android:hint="@string/hint_number" />
 
-        <Button
-            android:id="@+id/button_x"
-            style="@style/Buttons"
-            android:text="X" />
+        <ImageButton
+            android:id="@+id/button_backspace"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/transparent"
+            android:src="@drawable/ic_backspace" />
+
 
     </LinearLayout>
 

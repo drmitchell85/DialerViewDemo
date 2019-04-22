@@ -98,7 +98,7 @@ public class DialpadView extends LinearLayout implements View.OnClickListener {
     }
 
 
-        @Override
+    @Override
     public void onClick(View v) {
         switch (v.getId()) {
             case R.id.button_one:
@@ -151,10 +151,7 @@ public class DialpadView extends LinearLayout implements View.OnClickListener {
 
             case R.id.button_dial:
                 // dial number
-                //dial();
-
-                // open TelephoneActivity
-                startTelephoneCallActivity();
+                mListener.startDial();
 
                 break;
 
@@ -170,35 +167,14 @@ public class DialpadView extends LinearLayout implements View.OnClickListener {
         inputNumber.setText(cache + number);
     }
 
-    private void dial() {
-        if (mEditText.getText().length() <= 3) {
-            Toast.makeText(getContext(), "Please enter a valid number", Toast.LENGTH_SHORT).show();
-        } else {
-            Intent intent = new Intent(Intent.ACTION_DIAL);
+    private DialpadViewEventListener mListener;
 
-            String hash = mEditText.getText().toString();
-            if (hash.contains("#")) {
-                hash.replace("#", "$23");
-            }
-            intent.setData(Uri.parse("tel:" + hash));
-
-            // if (ActivityCompat.checkSelfPermission(this, Manifest.permission.CALL_PHONE) != PackageManager)
-
-            // startActivity(intent);
-        }
+    public void setDialpadViewEventListener(DialpadViewEventListener listener) {
+        mListener = listener;
     }
 
-    private void startTelephoneCallActivity() {
-        Log.d(TAG, "startTelephoneCallActivity: making phone call...");
-
-//        // This will be our intended intent
-//        Intent intent = new Intent(getActivity(), TelephoneCallActivity.class);
-//
-//        // Test intent to check CallInviteActivity is working fine
-//        // Intent intent = new Intent(getActivity(), CallInviteActivity.class);
-//
-//        startActivity(intent);
-
+    public interface DialpadViewEventListener {
+        void startDial();
     }
 
 }
