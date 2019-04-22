@@ -91,8 +91,8 @@ public class DialpadView extends LinearLayout implements View.OnClickListener {
         Button mBtnDial = findViewById(R.id.button_dial);
         mBtnDial.setOnClickListener(this);
 
-        Button mBtnX = findViewById(R.id.button_x);
-        mBtnX.setOnClickListener(this);
+//        Button mBtnX = findViewById(R.id.button_x);
+//        mBtnX.setOnClickListener(this);
 
         mEditText = findViewById(R.id.edit_text_input);
     }
@@ -155,10 +155,10 @@ public class DialpadView extends LinearLayout implements View.OnClickListener {
 
                 break;
 
-            case R.id.button_x:
-                // delete text
-                mEditText.setText("");
-                break;
+//            case R.id.button_x:
+//                // delete text
+//                mEditText.setText("");
+//                break;
         }
     }
 

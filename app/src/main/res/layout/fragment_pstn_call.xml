@@ -6,88 +6,122 @@
     android:orientation="vertical">
 
     <RelativeLayout
-        android:id="@+id/layout1"
+        android:id="@+id/relativelayout_fragment_pstncall_root"
         android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight="1">
+        android:layout_height="match_parent">
 
-        <EditText
-            android:id="@+id/phone_number"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_centerInParent="true"
-            android:hint="(555) 867-5309" />
-
-        <EditText
-            android:id="@+id/call_time"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_below="@+id/phone_number"
-            android:layout_centerHorizontal="true"
-            android:hint="00:12" />
-
-    </RelativeLayout>
-
-    <LinearLayout
-        android:id="@+id/layout2"
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight="1"
-        android:orientation="horizontal">
-
-        <RelativeLayout
-            android:layout_width="0dp"
+        <com.danmitchell.dialerviewdemo.DialpadView
+            android:id="@+id/dialpad"
+            android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:layout_weight="1">
+            android:layout_above="@+id/bottom_panel"
+            android:visibility="gone">
 
-            <ImageButton
-                android:id="@+id/button_dial_pad"
-                style="@style/ButtonsTransparent"
-                android:layout_centerInParent="true"
-                android:src="@drawable/ic_dial_pad" />
+            <include layout="@layout/view_dialpad" />
 
-        </RelativeLayout>
+        </com.danmitchell.dialerviewdemo.DialpadView>
 
-        <RelativeLayout
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:layout_weight="1">
+        <LinearLayout
+            android:id="@+id/bottom_panel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:orientation="vertical">
 
-            <ImageButton
-                android:id="@+id/button_hold_call"
-                style="@style/ButtonsTransparent"
-                android:layout_centerInParent="true"
-                android:src="@drawable/ic_hold_call_clipart" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
 
-        </RelativeLayout>
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1">
 
-    </LinearLayout>
+                    <ImageButton
+                        android:id="@+id/button_speaker"
+                        style="@style/ButtonsTransparent"
+                        android:layout_centerInParent="true"
+                        android:src="@drawable/ic_speaker" />
 
-    <RelativeLayout
-        android:id="@+id/layout3"
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight="1">
+                </RelativeLayout>
 
-        <ImageButton
-            android:id="@+id/button_mute_self"
-            style="@style/ButtonsTransparent"
-            android:layout_centerInParent="true"
-            android:src="@drawable/ic_mute_self" />
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1">
 
-    </RelativeLayout>
+                    <ImageButton
+                        android:id="@+id/button_dial_pad"
+                        style="@style/ButtonsTransparent"
+                        android:layout_centerInParent="true"
+                        android:src="@drawable/ic_dial_pad" />
 
-    <RelativeLayout
-        android:id="@+id/layout4"
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight="1">
+                </RelativeLayout>
 
-        <ImageButton
-            android:id="@+id/button_end_call"
-            style="@style/ButtonEndCall"
-            android:layout_centerInParent="true"
-            android:src="@drawable/ic_end_call" />
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1">
+
+                    <ImageButton
+                        android:id="@+id/button_mute_self"
+                        style="@style/ButtonsTransparent"
+                        android:layout_centerInParent="true"
+                        android:src="@drawable/ic_mute_self" />
+
+                </RelativeLayout>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1">
+
+                    <ImageButton
+                        android:id="@+id/button_hold_call"
+                        style="@style/ButtonsTransparent"
+                        android:layout_centerInParent="true"
+                        android:src="@drawable/ic_hold_call_clipart" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1">
+
+                    <ImageButton
+                        android:id="@+id/button_end_call"
+                        style="@style/ButtonEndCall"
+                        android:layout_centerInParent="true"
+                        android:src="@drawable/ic_end_call" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1">
+
+                    <ImageButton
+                        android:id="@+id/button_add_call"
+                        style="@style/ButtonsTransparent"
+                        android:layout_centerInParent="true"
+                        android:src="@drawable/ic_add_call" />
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
 
     </RelativeLayout>
 
